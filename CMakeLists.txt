@@ -3,8 +3,8 @@ project(Chinese_PlusPlus)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Chinese_PlusPlus TESTING/main.cpp src/Chinese.hpp
-        src/pinyin.h)
+add_executable(Chinese_PlusPlus TESTING/main.cpp src/Chinese.hpp)
 
-add_executable(Chinese_PlusPlus_Test TESTING/test.cpp src/Chinese.hpp
-        src/pinyin.h)
+add_executable(Chinese_PlusPlus_Test src/Chinese.hpp)
+
+add_executable(MakeCode MAKECODE/makenum.cpp)
