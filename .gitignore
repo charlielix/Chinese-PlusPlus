@@ -114,3 +114,5 @@ coverage/
 htmlcov/
 
 # ========== C++ 生成代码 ==========
+
+!TESTING/
