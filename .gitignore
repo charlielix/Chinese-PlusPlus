@@ -1,5 +1,117 @@
-cmake-build-*/
+# ========== macOS 系统文件 ==========
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+*.icloud
+
+# ========== CLion / JetBrains ==========
 .idea/
-*.o
+*.iml
+*.iws
+*.ipr
+out/
+.cache/
+
+# ========== VSCode ==========
+.vscode/
+*.code-workspace
+
+# ========== C++ 编译产物 ==========
+a.out
 *.out
-CMakeLists.txt
+*.exe
+*.app/
+*.dylib
+*.so
+*.so.*
+*.a
+*.o
+*.obj
+*.lo
+*.la
+*.lai
+*.slo
+*.gch
+*.pch
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.idb
+
+# 调试符号（macOS Clang/g++ 都会生成）
+*.dSYM/
+*.dSYM.zip
+
+# ========== CMake 构建目录（兼容两种 IDE）==========
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+compile_commands.json.bak
+_deps/
+Testing/
+CMakeUserPresets.json
+
+# ========== Makefile 构建 ==========
+*.make
+.deps/
+.libs/
+autom4te.cache/
+config.log
+config.status
+Makefile.in
+
+# ========== 调试 / 性能分析 ==========
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+vgcore.*
+core
+core.*
+perf.data*
+
+# ========== 依赖 / 第三方 ==========
+# 注意：如果 third_party/ external/ vendor/ 是手动提交的源码，请删除以下三行
+vendor/
+third_party/
+external/
+vcpkg_installed/
+conan/
+
+# ========== 环境 / 密钥 ==========
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ========== 日志 / 临时文件 ==========
+*.log
+logs/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+tmp/
+*.orig
+*.rej
+
+# ========== 测试覆盖率 ==========
+coverage/
+*.lcov
+htmlcov/
+
+# ========== C++ 生成代码 ==========
+MAKECODE/
